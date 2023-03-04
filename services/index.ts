@@ -1,6 +1,6 @@
 export const API_URL = 'https://jsonplaceholder.typicode.com'
 
-interface IApi {
+export interface IApi {
   id: number
   body: string
 }

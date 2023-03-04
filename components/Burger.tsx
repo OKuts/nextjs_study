@@ -9,7 +9,7 @@ export const Burger = (props: PropsType) => {
   const {id, image, name, desc} = props.burger
   return <>
     <Link className={st.burgerCard} href={`/burgers/${id}`} key={id}>
-      <div className={st.imageContainer}>
+      <div>
         <Image
           src={`${image}`}
           alt={`${name}`}

@@ -23,3 +23,9 @@ export const getAllBurgers = async (): Promise<IBurger[]> => {
 
   return await response.json()
 }
+
+export const getOneBurger = async (id: string): Promise<IBurger> => {
+  const response = await fetch(`http://localhost:5000/items/${id}`)
+
+  return await response.json()
+}
