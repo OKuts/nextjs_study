@@ -9,6 +9,7 @@ export const Header = () => {
         <Link href={'/'}> Main </Link>
         <Link href={'/posts'}> About </Link>
         <Link href={'/reviews'}> Reviews </Link>
+        <Link href={'/burgers'}> Burgers </Link>
       </div>
     </header>
   )

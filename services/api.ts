@@ -1,4 +1,4 @@
-import {API_URL, IComments, IPost} from "@/services/index";
+import {API_URL, IBurger, IComment, IPost} from "@/services/index";
 
 export const getAllPost = async (): Promise<IPost[]> => {
   const response = await fetch(`${API_URL}/posts`)
@@ -12,8 +12,14 @@ export const getOnePost = async (id: number): Promise<IPost[]> => {
   return await response.json()
 }
 
-export const getAllComments = async (): Promise<IComments[]> => {
+export const getAllComments = async (): Promise<IComment[]> => {
   const response = await fetch(`${API_URL}/comments`)
+
+  return await response.json()
+}
+
+export const getAllBurgers = async (): Promise<IBurger[]> => {
+  const response = await fetch('http://localhost:5000/items')
 
   return await response.json()
 }

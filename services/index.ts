@@ -10,7 +10,15 @@ export interface IPost extends IApi{
   title: string
 }
 
-export interface IComments extends IApi{
+export interface IComment extends IApi{
   postId: number
   email: string
+}
+
+export interface IBurger {
+  name: string
+  image: string
+  desc: string
+  price: number
+  id: string
 }
