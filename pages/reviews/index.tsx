@@ -1,10 +1,10 @@
 import Head from "next/head";
-import {IComments} from "@/services";
+import {IComment} from "@/services";
 import {getAllComments} from "@/services/api";
 import {FC} from "react";
 
 interface PropsType {
-  comments: IComments[]
+  comments: IComment[]
 }
 const Reviews: FC<PropsType> = ({comments}) => {
   return (

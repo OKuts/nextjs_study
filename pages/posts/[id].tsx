@@ -1,5 +1,6 @@
 import {useRouter} from "next/router";
-import {getAllPost, getOnePost, IPost} from "@/services/api";
+import {getAllPost, getOnePost} from "@/services/api";
+import {IPost} from "@/services";
 
 interface PropsType {
   post: IPost

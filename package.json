@@ -9,7 +9,7 @@
     "lint": "next lint",
     "json": "json-server --watch db.json --port 5000",
     "serve": "concurrently \"yarn dev\" \"yarn json\"",
-    "build-api": "concurrently \"yarn build\" \"yarn json\""
+    "build-api": "concurrently \"yarn json\" \"yarn build\""
   },
   "dependencies": {
     "@types/node": "18.14.4",
